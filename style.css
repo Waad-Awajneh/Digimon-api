@@ -1,54 +1,57 @@
-@font-face{
-    font-family:EvilEmpire;
+@font-face {
+    font-family: EvilEmpire;
     src: url(./fonts/EvilEmpire-4BBVK.ttf);
-  }
+}
 
-  @font-face{
-    font-family:Robus-BWqOd;
+@font-face {
+    font-family: Robus-BWqOd;
     src: url(./fonts/Robus-BWqOd.otf);
-  }
+}
 
 
 * {
-    
-    box-sizing:border-box;
+
+    box-sizing: border-box;
     font-family: EvilEmpire;
     /* color: #000; */
 
 }
-body{
-    background-color: black;   
+
+body {
+    background-color: black;
 }
 
-header{
+header {
     height: 20vh;
     display: flex;
 }
 
-footer{
+footer {
     color: #fff;
     font-size: 100%;
-  text-align: center;
-  margin: 2%;
+    text-align: center;
+    margin: 2%;
 }
+
 /* LOGO */
 
-.logo{
+.logo {
     color: #71770d;
-font-family: Robus-BWqOd;
-font-size: 10vh;
-font-weight: 100%;
-width: 30%;
+    font-family: Robus-BWqOd;
+    font-size: 10vh;
+    font-weight: 100%;
+    width: 30%;
 }
 
 /* Search Box */
-.search{
+.search {
     width: 70%;
-  display: flex; 
- justify-content: flex-end;
- margin-top: 1.5%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5%;
 }
-#search{
+
+#search {
     width: 10%;
     height: 8vh;
     border: 2px solid #db2515;
@@ -56,7 +59,7 @@ width: 30%;
     border-radius: 5%;
 }
 
-#name{
+#name {
     margin-right: 1%;
     width: 20%;
     height: 8vh;
@@ -73,38 +76,42 @@ width: 30%;
 
 
 /* CARD STYLE */
-#cards{
- 
+#cards {
+
     display: flex;
     flex-wrap: wrap;
-justify-content: center;
+    justify-content: center;
 }
+
 .card {
     background-color: white;
-    box-shadow:0 15px 20px 10px #71770d;
+    box-shadow: 0 15px 20px 10px #71770d;
     transition: 0.3s;
     margin: 4%;
     width: 20%;
     height: 20%;
     text-align: center;
-  }
-  
-  .card:hover{
-    box-shadow: 0 16px 15px 0px #db2515; 
-  }
-  
-  .card h1{
+}
+
+.card:hover {
+    box-shadow: 0 16px 15px 0px #db2515;
+}
+
+.card h1 {
     font-size: 200%;
-  }
-  .card p{
+}
+
+.card p {
     padding: 2%;
     font-size: 100%;
-  }
-  .card img {
+}
+
+.card img {
     width: 50%;
-    height: 50%;  
+    height: 50%;
 
 }
+
 /* footer  */
 
 .fa {
@@ -114,27 +121,27 @@ justify-content: center;
     text-align: center;
     text-decoration: none;
     border: 2px solid #fff;
-    box-shadow: 3px 3px 3px 3px  #71770d;   
+    box-shadow: 3px 3px 3px 3px #71770d;
     border-radius: 50%;
     display: inline-block;
-  }
- 
-  .fa:hover {  
-    box-shadow: 3px 3px 3px 3px  #db2515;   
-  }
-  
-  .fa-facebook {
-    background: #000;
-    color: white;
-  }
-  
-  .fa-twitter {
-    background: #000;
-    color: white;
-  }
+}
 
-  .fa-instgram{
+.fa:hover {
+    box-shadow: 3px 3px 3px 3px #db2515;
+}
+
+.fa-facebook {
     background: #000;
     color: white;
- 
-  }
+}
+
+.fa-twitter {
+    background: #000;
+    color: white;
+}
+
+.fa-instgram {
+    background: #000;
+    color: white;
+
+}

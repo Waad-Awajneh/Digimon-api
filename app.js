@@ -1,27 +1,22 @@
-// function Digimon(name, image, level) {
-//   this.name = name;
-//   this.image = image;
-//   this.level = level;
-// }
-const searchButton=document.getElementById("search");
-searchButton.addEventListener('click',filterDigimonByName);
+const searchButton = document.getElementById("search");
+searchButton.addEventListener("click", filterDigimonByName);
 getDigimon();
 
-function getDigimon(){
-fetch("https://digimon-api.vercel.app/api/digimon")
-  .then((data) => {
-    return data.json(); 
-  })
-  .then((dataAsObject) => {
-    const digimons = dataAsObject.filter((element, index) => {
-      return index <= 20;
-    });
+function getDigimon() {
+  fetch("https://digimon-api.vercel.app/api/digimon")
+    .then((data) => {
+      return data.json();
+    })
+    .then((dataAsObject) => {
+      const digimons = dataAsObject.filter((element, index) => {
+        return index <= 20;
+      });
 
-    displayDigimon(digimons);
-  })
-  .catch((err) => {
-    console.log('Error : cant find digimond',err);
-  });
+      displayDigimon(digimons);
+    })
+    .catch((err) => {
+      console.log("Error : cant find digimond", err);
+    });
 }
 
 function displayDigimon(digimons) {
@@ -37,19 +32,17 @@ function displayDigimon(digimons) {
   });
 }
 
-function filterDigimonByName()
-{let digimonName= document.getElementById("name").value;
-console.log(digimonName)
-    fetch(`https://digimon-api.vercel.app/api/digimon/name/${digimonName}`)
+function filterDigimonByName() {
+  let digimonName = document.getElementById("name").value;
+  console.log(digimonName);
+  fetch(`https://digimon-api.vercel.app/api/digimon/name/${digimonName}`)
     .then((data) => {
-      return data.json(); 
+      return data.json();
     })
     .then((digimons) => {
-        displayDigimon(digimons);
+      displayDigimon(digimons);
     })
     .catch((err) => {
-      console.log('Error : cant find digimond',err);
+      console.log("Error : cant find digimond", err);
     });
-
-
 }
